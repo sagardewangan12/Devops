@@ -1,0 +1,10 @@
+#step 1 use nginx as base image
+FROM nginx:latest
+
+#copy your custom html into nginx default directory
+COPY . /usr/share/nginx/html
+
+#expose port 80
+EXPOSE 80
+
+
